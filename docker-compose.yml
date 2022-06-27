@@ -1,0 +1,9 @@
+version: "3"
+services:
+  python3-ae:
+    restart: always
+    build: .
+    container_name: "python3-ae"
+    tty: true
+    volumes:
+      - ./src_local:/src_container
