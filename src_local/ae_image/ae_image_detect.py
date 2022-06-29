@@ -4,7 +4,7 @@
 import os
 import sys
 import numpy as np
-import keras.models
+import tensorflow.keras.models
 from tensorflow.keras.utils import load_img, img_to_array
 #from PIL import Image
 
@@ -24,7 +24,7 @@ if not os.path.exists(Datafile):
     print("Datafile not exist.")
     exit()
 
-model = keras.models.load_model(ModelFile)
+model = tensorflow.keras.models.load_model(ModelFile)
 
 img = img_to_array(load_img(Datafile, target_size=(INPUT_SIZE, INPUT_SIZE, IMAGE_CHANNEL)))
 # arrayに変換

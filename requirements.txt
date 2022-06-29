@@ -2,8 +2,8 @@ requests
 numpy
 pandas
 tensorflow
-keras
 scipy
 python_speech_features
 sklearn
 pillow
+matplotlib
