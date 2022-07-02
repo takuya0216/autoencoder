@@ -1,9 +1,11 @@
 requests
 numpy
 pandas
+h5py==2.10.0
 tensorflow
 scipy
 python_speech_features
 sklearn
 pillow
 matplotlib
+opencv-python

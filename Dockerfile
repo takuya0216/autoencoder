@@ -10,5 +10,8 @@ RUN mkdir -p /src_container
 COPY requirements.txt /src_container
 WORKDIR /src_container
 
+RUN apt-get update && apt-get install -y \
+  libgl1-mesa-dev \
+  libhdf5-dev
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
